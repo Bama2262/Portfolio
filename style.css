@@ -1,0 +1,412 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 62.5%;
+    scroll-padding-top: 8rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #17153B;
+    color: #C8ACD6;
+
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h3 {
+    color: #C8ACD6;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+header {
+    display: inline;
+}
+
+header h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+}
+
+.jumbotron {
+    background-color: #2E236C; 
+    color: #C8ACD6;
+    padding: 2rem;
+    text-align: center;
+}
+
+nav {
+    background-color: #433D8B;
+    width: 100%;
+    display: flex;
+    z-index: 1000;
+ 
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #C8ACD6;
+    width: 50%;
+    height: 6rem;
+    font-size: 2rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #2E236C;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    padding: 2rem;
+}
+
+#content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2E236C;
+    color: #C8ACD6;
+    border-radius: 10px;
+    padding: 2rem 2rem;
+}
+
+#skills h2 {
+    margin: 1rem 0 3rem;
+    letter-spacing: -0.2rem;
+}
+
+#skills h2 span {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.skill-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    background-color: #433D8B;
+    color: #C8ACD6;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    padding: 4rem;
+}
+
+.skill-list h3 {
+    margin: 1.5rem 0 4rem;
+}
+
+.skill-list img {
+    width: 100%;
+    height: 20rem;
+    object-fit: fill;
+    object-position: center;
+    margin: 0 0 2rem;
+}
+
+.skill-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skill-logo i {
+    width: 33%;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #2E236C;
+    font-size: 5rem;
+    color: #C8ACD6;
+}
+
+.skill-list:nth-child(2) .skill-logo i {
+    width: 50%;
+}
+
+.skill-list:nth-child(3) .skill-logo i {
+    width: 100%;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2E236C;
+    color: #C8ACD6;
+    border-radius: 10px;
+    padding: 2rem 2rem;
+    margin-top: 2rem;
+}
+
+#projects h2 {
+    margin: 1rem 0 3rem;
+    letter-spacing: -0.2rem;
+}
+
+#projects h2 span {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.project-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #433D8B;
+    box-shadow: 0 0 5px #00000076;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.project-container img{
+    width: 100%;
+    max-height: 50rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.project-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-text a {
+    width: 15%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: #17153B;
+    color: #C8ACD6;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.project-text a:hover {
+    background-color: #2E236C;
+}
+
+aside#biography {
+    position: sticky;
+    top: 8rem;
+    width: 25%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2E236C; 
+    border-radius: 10px;
+    padding: 2rem;
+    margin-left: 2rem;
+}
+
+.biography {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.biography h2{
+    margin: 0 0 1rem;
+}
+
+.biography img {
+    width: 100%;
+    max-height: 30rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.biography p {
+    text-align: justify;
+    margin: 2rem 0;
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.social a {
+    width: 30%;
+    height: 5.5rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #433D8B;
+    color: #C8ACD6;
+    text-decoration: none;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.social a:hover {
+    background-color: #C8ACD690;
+    color: #433D8B90;
+}
+
+footer {
+    background-color: #17153B;
+    color: #C8ACD6;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+footer a {
+    font-size: 1.5rem;
+    color:  #3a2c89;;
+    text-decoration: none;
+
+    transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+    font-weight: bold;
+    color: #433D8B;
+}
+
+@media screen and (max-width:75em) {
+    html {
+        font-size: 55%;
+    }
+
+    .skill-list {
+        padding: 2rem;
+    }
+
+    .skill-logo {
+        gap: 1rem;
+    }
+
+    .skill-list:nth-child(3) .skill-logo, 
+    .skill-list:nth-child(2) .skill-logo {
+        margin-top: auto;
+    }
+
+    .biography img {
+        max-height: 20rem;
+    }
+
+    .biography p {
+        margin: 1.5rem 0;
+    }
+}
+
+@media screen and (max-width:48em) {
+    html {
+        font-size: 50%;
+    }
+
+    .project-text a {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:30em) {
+    html {
+        font-size: 45%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    aside#biography {
+        position: relative;
+        width: 100%;
+        margin: 2rem 0;
+        top: 0;
+    }
+
+    .biography img {
+        max-height: 40rem;
+    }
+
+    .skill-container {
+        flex-direction: column;
+    }
+
+    .skill-list {
+        width: 100%;
+    }
+
+    .skill-list img {
+        margin: 2rem 0;
+    }
+
+    .project-text a {
+        width: 30%;
+    }
+}
+
